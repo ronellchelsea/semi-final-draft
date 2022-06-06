@@ -157,7 +157,7 @@ h1 {
     color: black;
     font-size: 70px;
     text-align: left;
-    font-family: sans-serif;
+    font-family: georgia;
 }
 p{
     color: darkslategrey;
@@ -225,4 +225,15 @@ h1 {
         text-align justify;
     }
     
+}
+table {
+  width: 100%;
+  height: 700px;
+}
+th, td {
+        vertical-align: bottom
+}
+td img {
+    width: 232px;
+    height: 232px;
 }
