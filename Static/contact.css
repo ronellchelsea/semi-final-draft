@@ -6,7 +6,7 @@
 }
 .container{
     width: 100%;
-    background-image: url('./MINIMALIST.webp');
+    background-image: url('../pictures/MINIMALIST.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -157,11 +157,6 @@ h2{
     text-align: center;
 }
 .column{
-    float: center;
-    width: 45%;
-    margin-top: -20px;
-    margin-right: 100px;
-    margin-left: -30px;
 }
 .page{       
     width: fit-content;
@@ -216,12 +211,11 @@ h2{
 }
 .contact-box{
     width: 550px;
+    padding-top: 17px;
+    padding-bottom: 1px;
     background-color: #fff;
     box-shadow: 0 0 20px #999;
-    top: 70%;
     left: 40%;
-    transform: translate(-50%,-50%);
-    position: absolute;
 }
 form{
     margin: 35px;
@@ -246,6 +240,7 @@ form{
     padding-top: 10px;
 }
 .btn{
+    align-self: center;
     border-radius:  20px;
     color: #fff;
     margin-top: 18px;

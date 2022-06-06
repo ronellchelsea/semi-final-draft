@@ -6,7 +6,7 @@
 }
 .container{
     width: 100%;
-    background-image: url('./MINIMALIST.webp');
+    background-image: url('../pictures/MINIMALIST.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -193,16 +193,16 @@ button{
     transition: transform 0.5s;
 }
 .card1 {
-    background-image: url(./rash\ guard.1.jpg);
+    background-image: url(../pictures/rash\ guard.1.jpg);
 }
 .card2 {
-    background-image: url(./suimsuit.2.jpg);
+    background-image: url(../pictures/suimsuit.2.jpg);
 }
 .card3 {
-    background-image: url(./sport\ bra.3.jpg);;
+    background-image: url(../pictures/sport\ bra.3.jpg);;
 }
 .card4 {
-    background-image: url(./tights.4.jpg);;
+    background-image: url(../pictures/tights.4.jpg);;
 }
 .card:hover {
     transform: translateY(-20px);
