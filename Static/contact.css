@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+.container{
+    width: 100%;
+    background-image: url('./MINIMALIST.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+.navbar .fa{
+    margin-right: 8px;
+}
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1px;
+    text-align: right;
+    float: left;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+a{
+    cursor: pointer;
+}
+nav a:hover{
+    background: whitesmoke;
+    font-size: 20px;
+}
+.sub-menu-1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-right: 30;
+    margin-left: 0px;
+}
+.navbar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    font-size: 20px;
+    padding: 0px;
+}
+.sub-menu-2{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+}
+.navbar ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    margin-left: -30px;
+    margin-right: 20px;
+}
+.navbar ul li:hover .sub-menu-2 ul li{
+    width: 150px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu-2 li {
+    font-size: 50px;
+}
+.sub-menu-3 {
+    display: none;
+}
+.navbar ul li:hover .sub-menu-3{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.navbar ul li:hover .sub-menu-3 ul{
+    display: block;
+    text-align: left;
+    margin-left: -50px;
+    margin-right: 20px;
+}
+.navbar ul li:hover .sub-menu-3 ul li{
+    display: block;
+    width: 10px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu-4 {
+    display: none;
+}
+.navbar ul li:hover .sub-menu-4{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.navbar ul li:hover .sub-menu-4 ul{
+    display: block;
+    text-align: left;
+    margin-left: -50px;
+    margin-right: 20px;
+}
+.navbar ul li:hover .sub-menu-4 ul li{
+    display: block;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color:blue;
+}
+p{
+    font-size: 17px;
+    text-align: center;
+}
+h1{
+     text-align: center;
+     text-shadow: none;
+}
+h2{
+    text-align: center;
+}
+.column{
+    float: center;
+    width: 45%;
+    margin-top: -20px;
+    margin-right: 100px;
+    margin-left: -30px;
+}
+.page{       
+    width: fit-content;
+    width: 1450px;
+    position: fixed;
+    padding-left: 90px;
+    padding-top: -20px;
+    padding-bottom: 20px;
+    align-items: center ;     
+}
+    
+    
+.contact {
+    border-style: hidden;
+    border-width: 5px 5px 5px 5px;
+    width: 350px
+}
+.row{
+    padding-left: 50px;
+    padding-right: 100px;
+    
+}
+    
+.contact{
+        background-color: #fff;
+        border-color: #fff;
+        text-align: center;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 6px 6px 6px 6px;
+        
+    }
+    p1{
+        font-weight: bold;
+    }
+.Socialmedia a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1px;
+}
+.Socialmedia h1 {
+    font-size: medium;
+    margin-top: 10px;
+}
+.contact-box{
+    width: 550px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #999;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+form{
+    margin: 35px;
+}
+.input-field{
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    margin-left: -10px;
+}
+.Message-box{
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+.btn{
+    border-radius:  20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #777;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
