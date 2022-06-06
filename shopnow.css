@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    background-image: url('./MINIMALIST.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.navbar .fa{
+    margin-right: 8px;
+}
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1px;
+    text-align: right;
+    float: left;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+a{
+    cursor: pointer;
+}
+nav a:hover{
+    background: whitesmoke;
+    font-size: 20px;
+}
+.sub-menu-1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-right: 30;
+    margin-left: 0px;
+}
+.navbar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    font-size: 20px;
+    padding: 0px;
+}
+.sub-menu-2{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+}
+.navbar ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    margin-left: -30px;
+    margin-right: 20px;
+}
+.navbar ul li:hover .sub-menu-2 ul li{
+    width: 150px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu-2 li {
+    font-size: 50px;
+}
+.sub-menu-3 {
+    display: none;
+}
+.navbar ul li:hover .sub-menu-3{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.navbar ul li:hover .sub-menu-3 ul{
+    display: block;
+    text-align: left;
+    margin-left: -50px;
+    margin-right: 20px;
+}
+.navbar ul li:hover .sub-menu-3 ul li{
+    display: block;
+    width: 10px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu-4 {
+    display: none;
+}
+.navbar ul li:hover .sub-menu-4{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.navbar ul li:hover .sub-menu-4 ul{
+    display: block;
+    text-align: left;
+    margin-left: -50px;
+    margin-right: 20px;
+}
+.navbar ul li:hover .sub-menu-4 ul li{
+    display: block;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color:blue;
+}
