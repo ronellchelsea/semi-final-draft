@@ -153,6 +153,9 @@ nav a:hover{
 .col {
     flex-basis: 50%;
 }
+.colu {
+    margin-top:100px
+}
 h1 {
     color: black;
     font-size: 70px;
@@ -222,3 +225,5 @@ h5 {
         text-align justify;
     }
 }
+
+
