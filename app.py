@@ -1,5 +1,7 @@
+from dataclasses import dataclass
+from data import products
 from re import L
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
@@ -72,7 +74,6 @@ def login():
     return render_template('login.html', form=form) 
 
 
-
 @app.route('/logout', methods=['GET', 'POST'])
 @login_required
 def logout():
@@ -92,10 +93,19 @@ def register():
 
     return render_template('register.html', form=form)
 
+#When clicking Products from the navbar
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
+#When clicking Order Now from the navbar
 @app.route('/order_now')
 def order():
-    return render_template('order.html')
+    print(request.form)
+    print(request.form.get("account"))
+    return render_template("order.html")
 
+#When clickning Swimsuit/Rash Guard/Sports Bra from the dropdown menu in navbar
 @app.route('/swimsuit')
 def swimsuit():
     return render_template('swimsuit.html')
@@ -108,12 +118,74 @@ def rash_guard():
 def sports_bra():
     return render_template('sportsbra.html')
 
+#When clicking About Us from the navbar
 @app.route('/AboutUs')
 def AboutUs():
     return render_template('about_us.html')
 
+#When clicking Contact Us from the navba
+@app.route('/ContactUs')
+def ContactUs():
+    return render_template('contact.html')
 
+#item view of swimsuits
+@app.route('/swimsuit/valentine')
+def valentine():
+    return render_template('swimsuit_valentine.html')
 
+@app.route('/swimsuit/beth')
+def beth():
+    return render_template('swimsuit_beth.html')
+
+@app.route('/swimsuit/tiffany')
+def tiffany():
+    return render_template('tiffany.html')
+
+@app.route('/swimsuit/shakira')
+def shakira():
+    return render_template('shakira.html')
+
+@app.route('/swimsuit/poppy')
+def poppy():
+    return render_template('poppy.html')
+
+#item view of rash guards
+@app.route('/rashguard/shakira')
+def shakira():
+    return render_template('swimsuit_shakira.html')
+
+@app.route('/sportsbra/shelsea')
+def shelsea():
+    return render_template('shelsea.html')
+
+@app.route('/sportsbra/lianne')
+def lianne():
+    return render_template('lianne.html')
+
+@app.route('/sportsbra/celine')
+def celine():
+    return render_template('celine.html')
+
+@app.route('/sportsbra/athena')
+def athena():
+    return render_template('athena.html')
+
+#item view of rash guards
+@app.route('/rashguard/aritha')
+def aritha():
+    return render_template('aritha.html')
+
+@app.route('/rashguard/amethyst')
+def amethyst():
+    return render_template('amethyst.html')
+
+@app.route('/rashguard/oceana')
+def oceana():
+    return render_template('oceana.html')
+
+@app.route('/rashguard/luxe')
+def luxe():
+    return render_template('luxe.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
